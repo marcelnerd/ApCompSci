@@ -20,7 +20,7 @@ public class Main {
 		//loops_4();
 		//nested_loops_1();
 		//nested_loops_2();
-		nested_loops_3();
+		//nested_loops_3();
 	}
 	
 	public static void nested_loops_3() { //This program prints out a multiplication table
