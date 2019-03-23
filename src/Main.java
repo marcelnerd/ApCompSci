@@ -4,6 +4,14 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//Arrays1 a = new Arrays1();
+		//Arrays2 b = new Arrays2();
+		ParallelArrays c = new ParallelArrays();
+		
+		//a.runSpeeds();
+		//b.runThing();
+		c.rollDice();
+		
 		//ForcefulHello.newMain();
 		//farToCel();
 		//daysToMinutes();
@@ -25,13 +33,26 @@ public class Main {
 	
 	public static void nested_loops_3() { //This program prints out a multiplication table
 		System.out.println("----+-----------------------------------------------------------------------");
-		System.out.println("      | 1    2     3     4       5     6      7     8       9     10    11    12");
+		System.out.println("      | 1     2     3     4     5     6      7    8     9     10    11    12");
 		System.out.println("----+-----------------------------------------------------------------------");
 		
 		for(int i = 1; i < 13; i++) { //Loops through rows
-			System.out.print(i + "     | ");
+			if(i < 10) {
+				System.out.print(i + "     | ");
+			}
+			else {
+				System.out.print(i + "    | ");
+			}
 			for(int l = 1; l < 13; l++) { //Loops through columns
-				System.out.print((i*l) + "     ");
+				if(l*i < 10) {
+					System.out.print((i*l) + "     ");
+				}
+				else if(l*i < 100) {
+					System.out.print(l*i + "    ");
+				}
+				else {
+					System.out.print(l*i + "   ");
+				}
 			}
 			System.out.println();
 		}
@@ -96,11 +117,13 @@ public class Main {
 		int answer, guess;
 		Random rand = new Random();
 		answer = rand.nextInt(20) + 1; //This sets the answer to a random number between 1 and 20
+		int counter = 0; //Keeps track of how many times the computer has guessed
 		System.out.println("The computer is trying to guess a number. The correct answer is: " + answer);
 		
 		do {
+			counter++;
 			guess = rand.nextInt(20) + 1; //This guesses a random number between 1 and 20
-			System.out.println("The computer guessed " + guess);
+			System.out.println("Guess number " + counter + ": " + guess);
 		} while(guess != answer);
 		
 		System.out.println("The computer guessed correctly!");

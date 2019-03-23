@@ -1,7 +1,7 @@
 
 public class ForcefulHello {
 
-	public static void newMain() {
+	public static void newMain() { // This program brute-forces Hello World, because I can
 		String target = "Hello World!";
 		String current = "";
 		int location = 0;
