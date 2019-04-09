@@ -6,11 +6,13 @@ public class Main {
 	public static void main(String[] args) {
 		//Arrays1 a = new Arrays1();
 		//Arrays2 b = new Arrays2();
-		ParallelArrays c = new ParallelArrays();
+		//ParallelArrays c = new ParallelArrays();
+		ArraysLists1 d = new ArraysLists1();
 		
 		//a.runSpeeds();
 		//b.runThing();
-		c.rollDice();
+		//c.rollDice();
+		d.runStuff();
 		
 		//ForcefulHello.newMain();
 		//farToCel();

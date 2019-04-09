@@ -1,3 +1,7 @@
+package stuff;
+
+import java.util.Scanner;
+
 public  class Pizza {
 	int size; //Size could be 1, 2, or 3, for small/medium/large
 	int toppings; //Number of toppings
@@ -19,12 +23,13 @@ public  class Pizza {
 		int si, to, drn, drs;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter pizza size");
-		si = sc.nextInt():
+		si = sc.nextInt();
 		System.out.println("Please enter number of toppings");
 		to = sc.nextInt();
 		System.out.println("Please enter number of drinks");
 		drn = sc.nextInt();
 		System.out.println("Please enter drink size");
-		drs - sc.nextInt();
+		drs = sc.nextInt();
 		return new Pizza(si, to, drn, drs);
 	}
+}
