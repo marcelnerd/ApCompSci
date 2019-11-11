@@ -4,33 +4,62 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		//Arrays1 a = new Arrays1();
-		//Arrays2 b = new Arrays2();
-		//ParallelArrays c = new ParallelArrays();
-		ArraysLists1 d = new ArraysLists1();
-		
-		//a.runSpeeds();
-		//b.runThing();
-		//c.rollDice();
-		d.runStuff();
-		
-		//ForcefulHello.newMain();
-		//farToCel();
-		//daysToMinutes();
-		//sphereInfo();
-		//ifStatements_1();
-		//ifStatements_2();
-		//ifStatements_3();
-		//switchStatements_1();
-		//loops_1();
-		//loops_1_challenge_1();
-		//loops_1_challenge_2();
-		//loops_2();
-		//loops_3();
-		//loops_4();
-		//nested_loops_1();
-		//nested_loops_2();
-		//nested_loops_3();
+		try {
+
+			//Arrays1 a = new Arrays1();
+			//Arrays2 b = new Arrays2();
+			//ParallelArrays c = new ParallelArrays();
+			//ArraysLists1 d = new ArraysLists1();
+			//ArrayLists1_1 e = new ArrayLists1_1();
+			//FileIO_1 f = new FileIO_1();
+			//FileIO_2 g = new FileIO_2();
+			//Strings_3 h = new Strings_3();
+			//Overloading_1 i = new Overloading_1();
+			//Overloading_2 j = new Overloading_2();
+			//Abstract1 k = new Abstract1();
+			SortingStuff l = new SortingStuff();
+			
+			
+			//a.runSpeeds();
+			//b.runThing();
+			//c.rollDice();
+			//d.runStuff();
+			//e.runMoreStuff();
+			//f.readIn();
+			//g.runStuff();
+			//h.readIn();
+			//i.runStuff();
+			//j.runStuff();
+			//k.runStuff();
+			//l.runStuff("bubble");
+			//l.runStuff("insertion");
+			//l.runStuff("selection");
+			//l.runStuff("merge");
+			//l.runStuff("quick");
+			//l.runStuff("sequential");
+			l.runStuff("binary");
+			
+			//ForcefulHello.newMain();
+			//farToCel();
+			//daysToMinutes();
+			//sphereInfo();
+			//ifStatements_1();
+			//ifStatements_2();
+			//ifStatements_3();
+			//switchStatements_1();
+			//loops_1();
+			//loops_1_challenge_1();
+			//loops_1_challenge_2();
+			//loops_2();
+			//loops_3();
+			//loops_4();
+			//nested_loops_1();
+			//nested_loops_2();
+			//nested_loops_3();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void nested_loops_3() { //This program prints out a multiplication table
